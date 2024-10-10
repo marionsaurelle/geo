@@ -47,8 +47,8 @@ pipeline{
         steps{
              sh 'docker tag dev:v.${BUILD_ID} \
              082438639781.dkr.ecr.us-east-1.amazonaws.com/dev:v.${BUILD_ID}'
-             sh 'docker tag dev:latest \
-             082438639781.dkr.ecr.us-east-1.amazonaws.com/dev:latest'
+             sh 'docker tag dev:v.latest \
+             082438639781.dkr.ecr.us-east-1.amazonaws.com/dev:v.latest'
         }
     }
         stage('push image'){
