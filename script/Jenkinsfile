@@ -39,7 +39,8 @@ pipeline{
     }
       stage('docker image build'){
         steps{
-            sh 'docker build -t dev:v.${BUILD_ID} .'    
+            sh 'docker build -t dev:v.${BUILD_ID} .'  
+            sh 'docker build -t dev:v.latest .' 
         }  
     }                                                             
     stage('Image tagging'){
