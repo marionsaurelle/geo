@@ -29,6 +29,6 @@ pipeline{
         target/bio*.jar \
         "http://ec2-3-83-42-232.compute-1.amazonaws.com:8081/artifactory/geolocation/geo/bio_${BUILD_ID}.jar"'
         }
-    }xd cg i  
+    }
    }
 }
